@@ -1,11 +1,11 @@
-// Especialidades 
+// Especialidades
 const cardiologia = {
     id: 1,
     nome: "Cardiologia",
 };
 const ortopedia = {
     id: 2,
-    nome: "Ortopedia", 
+    nome: "Ortopedia",
     descricao: "Tratamento de ossos e articulações",
 };
 const pediatria = {
@@ -79,13 +79,13 @@ function exibirConsulta(consulta) {
         currency: "BRL",
     });
     return `
-Consulta #${consulta.id}
-Médico: ${consulta.medico.nome}
-Paciente: ${consulta.paciente.nome}
-Especialidade: ${consulta.medico.especialidade.nome}
-Data: ${consulta.data.toLocaleDateString("pt-BR")}
-Valor: ${valorFormatado}
-Status: ${consulta.status}
+    Consulta #${consulta.id}
+    Médico: ${consulta.medico.nome}
+    Paciente: ${consulta.paciente.nome}
+    Especialidade: ${consulta.medico.especialidade.nome}
+    Data: ${consulta.data.toLocaleDateString("pt-BR")}
+    Valor: ${valorFormatado}
+    Status: ${consulta.status}
 `;
 }
 const consulta1 = criarConsulta(1, medico1, paciente1, new Date(), 350);
